@@ -12,7 +12,7 @@ To check out whats next take a look at our Trello
 https://trello.com/b/IVAkwfqq/college-maps-ci103
 
 ## Requirements 
-None hosted by GitHub.io [CollegeMapsWeb] (https://ddebellis88.github.io/)
+None hosted by GitHub.io (https://ddebellis88.github.io/)
 
 # Built With
 * [WRLD3D] (https://www.wrld3d.com/) - API Reference
