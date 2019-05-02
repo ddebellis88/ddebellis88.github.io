@@ -1,5 +1,7 @@
 # College Maps
 
+
+
 Now in Beta Stage!
 
 ## Project mission
@@ -10,7 +12,7 @@ To check out whats next take a look at our Trello
 https://trello.com/b/IVAkwfqq/college-maps-ci103
 
 ## Requirements 
-Android: API Level 22+
+None hosted by GitHub.io [CollegeMapsWeb] (https://ddebellis88.github.io/)
 
 # Built With
 * [WRLD3D] (https://www.wrld3d.com/) - API Reference
