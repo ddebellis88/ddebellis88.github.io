@@ -141,7 +141,7 @@ marker9.bindPopup(m9.property.title).openPopup();
 function onInitialStreamingComplete() {
     var buildingHighlight = L.Wrld.buildings.buildingHighlight(
         L.Wrld.buildings.buildingHighlightOptions()
-            .highlightBuildingAtLocation([43.2635047, -79.9190461])
+            .highlightBuildingAtLocation([43.2635047, -79.9190461], [43.2595923, -79.9175896])
             .color([255, 255, 0, 128])
         )
         .addTo(map);
