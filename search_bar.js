@@ -6,12 +6,13 @@ var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
 });
 
 var locations = [
+    {title: "Drexel University", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541716, -75.186816), zoom: 15, headingDegrees: 100}},
     {title: "Drexel University (Main Building)", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541718, -75.186816), zoom: 18, headingDegrees: 100}},
     {title: "Drexel University (Disque Hall)", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9545366, -75.1877259), zoom: 18, headingDegrees: 0}},
     {title: "Drexel University (Stratton Hall)", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541605, -75.18797), zoom: 18, headingDegrees: 0}},
     {title: "McMaster University", subtitle:"Ontario, Canada", location: {latLng: L.latLng(43.2632857, -79.9184003), zoom: 15, headingDegrees: -30}},
     {title: "University Hall", subtitle:"McMaster University", location: {latLng: L.latLng(43.2635047, -79.9190461), zoom: 20, headingDegrees: 0}},
-    {title: "McMaster Health Sciences Center", subtitle:"McMaster University", location: {latLng: L.latLng(43.2595923, -79.9175896), zoom: 15, headingDegrees: -30}},
+    {title: "McMaster Health Sciences Center", subtitle:"McMaster University", location: {latLng: L.latLng(43.2595923, -79.9175896), zoom: 20, headingDegrees: -30}},
     {title: "Burke Science Building", subtitle:"McMaster University", location: {latLng: L.latLng(43.2620513, -79.9201806), zoom: 20, headingDegrees: 0}}
 ];
 
@@ -68,7 +69,7 @@ var searchbarConfig = {
         {name: "Wine", searchTag: "wine", iconKey: "wine"}
     ],
     locationJumps: [
-        {name: "McMaster University Hall", latLng: [43.263533,-79.918973]},
+        {name: "McMaster University Hall", zoom: 20, latLng: [43.263533,-79.918973]},
         {name: "Drexel University (Main Building)", zoom: 20, latLng: [39.9541718, -75.186816]},
         {name: "Drexel University (Disque Hall)", zoom: 18, latLng: [39.9545366, -75.1877259]},
         {name: "Drexel University (Stratton Hall)", latLng: [39.9541605, -75.18797]},
@@ -134,6 +135,5 @@ marker6.bindPopup(m6.property.title).openPopup();
 marker7.bindPopup(m7.property.title).openPopup();
 marker8.bindPopup(m8.property.title).openPopup();
 marker9.bindPopup(m9.property.title).openPopup();
-
 //end adding markers and leaflets
 //
