@@ -137,3 +137,15 @@ marker8.bindPopup(m8.property.title).openPopup();
 marker9.bindPopup(m9.property.title).openPopup();
 //end adding markers and leaflets
 //
+//Start adding a building highlight
+function onInitialStreamingComplete() {
+    var buildingHighlight = L.Wrld.buildings.buildingHighlight(
+        L.Wrld.buildings.buildingHighlightOptions()
+            .highlightBuildingAtLocation([43.2635047, -79.9190461])
+            .color([255, 255, 0, 128])
+        )
+        .addTo(map);
+}
+
+map.on("initialstreamingcomplete", onInitialStreamingComplete);
+//End adding a building highlight
