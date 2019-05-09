@@ -73,5 +73,5 @@ var timeIndex = 0;
 setInterval(function() {
     map.themes.setTime(times[timeIndex]);
     timeIndex = (timeIndex + 1) % times.length;
-}, 50000);
+}, 100000);
 // end of changing time
