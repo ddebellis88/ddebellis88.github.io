@@ -149,3 +149,16 @@ function onInitialStreamingComplete() {
 
 map.on("initialstreamingcomplete", onInitialStreamingComplete);
 //End adding a building highlight
+//
+//
+var polygonPoints = [
+    [43.2633555, -79.9186634],
+    [43.2633452, -79.919486],
+    [43.2635652, -79.9194953],
+    [43.2635725, -79.9190636],
+    [43.2638371, -79.9190641],
+    [43.2638369, -79.9188863],
+    [43.2635316, -79.9188823],
+    [43.2635351, -79.9186771]
+];
+var poly = L.polygon(polygonPoints).addTo(map);
