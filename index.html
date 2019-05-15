@@ -26,6 +26,16 @@
     <div id="map"></div>
     
     <script src="search_bar.js"></script>
+    <script>
+      var circle = L.circle([43.26337353676017, -79.918973001283504], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 22.0,
+        indoorMapId: indoorMapId,
+        indoorMapFloorId: 0
+      }).addTo(map);
+    </script>
     <script src="routing.js"></script>
 
   </div>

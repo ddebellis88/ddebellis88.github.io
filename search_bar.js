@@ -1,9 +1,16 @@
-// start of searchBarControl 
 var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
-    center: [43.263533,-79.918973],
-    zoom: 15,
-    indoorsEnabled: true //enables indoorControl
-});
+    center: [43.2635390000872, -79.9190792001395],
+    zoom: 16,
+    indoorsEnabled: true,
+    coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-0b256cbd-830e-477e-b2c6-09c7064bcbe5_2019_05_15_02_27_26/webgl_manifest.bin.gz"
+  });
+
+// start of searchBarControl 
+// var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
+//     center: [43.263533,-79.918973],
+//     zoom: 15,
+//     indoorsEnabled: true //enables indoorControl
+// });
 
 var locations = [
     {title: "Drexel University", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541716, -75.186816), zoom: 15, headingDegrees: 100}},
@@ -62,11 +69,11 @@ var searchbarConfig = {
     outdoorSearchMenuItems: [
         {name: "Around Me", searchTag: "", iconKey: "aroundme"},
         {name: "Tourism", searchTag: "tourist_info", iconKey: "tourist_info"},
-        {name: "Accommodation", searchTag: "accommodation", iconKey: "accommodation"},
-        {name: "Burgers", searchTag: "burgers", iconKey: "burgers"},
+        //{name: "Accommodation", searchTag: "accommodation", iconKey: "accommodation"},
+        //{name: "Burgers", searchTag: "burgers", iconKey: "burgers"},
         {name: "Food & Drink", searchTag: "food_drink", iconKey: "food_drink"},
         {name: "Hotel", searchTag: "hotel", iconKey: "hotel"},
-        {name: "Wine", searchTag: "wine", iconKey: "wine"}
+        //{name: "Wine", searchTag: "wine", iconKey: "wine"}
     ],
     locationJumps: [
         {name: "McMaster University Hall", zoom: 20, latLng: [43.263533,-79.918973]},

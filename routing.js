@@ -16,8 +16,8 @@ var _onRoutesLoaded = function(routes) {
 };
 
 var getRoute = function() {
-    var startPoint = [-2.978629, 56.46024, 0];
-    var endPoint = [-2.9783117, 56.4600344, 2];
+    var startPoint = [43.263439997535691,-79.918974115517202, 0];
+    var endPoint = [43.26337353676017,-79.918973001283504, 0];
 
     map.routes.getRoute([startPoint, endPoint], _onRoutesLoaded);
 };
@@ -75,3 +75,52 @@ setInterval(function() {
     timeIndex = (timeIndex + 1) % times.length;
 }, 100000);
 // end of changing time
+
+
+// // Indicate our current location with a circle
+//var TempIndoorMapId = indoorMapId;
+// var myLocation = L.latLng([37.786542, -122.386022]);
+
+// var circle = L.circle(
+//     myLocation,
+//     {
+//         color: 'red',
+//         fillColor: '#f03',
+//         fillOpacity: 0.5,
+//         radius: 50.0
+//         //radius: 2.0,
+//         //color: "#0000ff",
+//         //indoorMapId: indoorMapId,
+//         //indoorMapFloorId: 0
+//     }
+// ).addTo(map);
+
+// //SearchBar Nav
+// searchbar.on("searchresultselect", selectSearchResult);
+
+// function selectSearchResult(event) {
+//     var location = event.result.location;
+   
+//     var resultCoord = location.latLng;
+//     var resultFloorId = location.floorIndex;
+   
+//     var coordWithFloor = [resultCoord.lng, resultCoord.lat, resultFloorId];
+//     var myCoordWithFloor = [myLocation.lng, myLocation.lat, 1];
+   
+//     map.routes.getRoute([myCoordWithFloor, coordWithFloor], displayRoute);
+//    }
+
+// // Add a layer group to contain our route polylines
+// var routeLines = L.layerGroup();
+// routeLines.addTo(map);
+
+// // Draw polylines representing a route
+// function displayRoute(routes) {
+//  routeLines.clearLayers();
+
+//  for (var i = 0; i < routes[0].length; ++i) {
+//    var step = routes[0][i];
+//    var polyline = L.polyline(step.points, { indoorMapId: step.indoorMapId, indoorMapFloorId: step.indoorMapFloorId });
+//    polyline.addTo(routeLines);
+//  }
+// }
