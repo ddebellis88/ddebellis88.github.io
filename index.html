@@ -24,18 +24,15 @@
     <!---->
 
     <div id="map"></div>
-    
-    <script src="search_bar.js"></script>
     <script>
-      var circle = L.circle([43.26337353676017, -79.918973001283504], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 22.0,
-        indoorMapId: indoorMapId,
-        indoorMapFloorId: 0
-      }).addTo(map);
+    var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
+      center: [43.2635390000872, -79.9190792001395],
+      zoom: 16,
+      indoorsEnabled: true,
+      coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-0b256cbd-830e-477e-b2c6-09c7064bcbe5_2019_05_15_02_27_26/webgl_manifest.bin.gz"
+    });
     </script>
+    <script src="search_bar.js"></script>
     <script src="routing.js"></script>
 
   </div>

@@ -1,3 +1,26 @@
+var indoorControl = new WrldIndoorControl("widget-container", map);
+var indoorMapId = 'EIM-0b256cbd-830e-477e-b2c6-09c7064bcbe5';
+
+//start location in red
+var circle = L.circle([43.26337353676017, -79.918973001283504], {
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5,
+  radius: 1.0,
+  indoorMapId: indoorMapId,
+  indoorMapFloorId: 0
+}).addTo(map);
+
+//end location in green [
+var circle = L.circle([43.263679209085133, -79.918976558239819], {
+  color: 'green',
+  fillColor: '#008000',
+  fillOpacity: 0.5,
+  radius: 1.0,
+  indoorMapId: indoorMapId,
+  indoorMapFloorId: 0
+}).addTo(map);
+
 //start of Routing
 var routeLines = [];
 
@@ -15,9 +38,10 @@ var _onRoutesLoaded = function(routes) {
     }
 };
 
+//NOTE: When you click on "Get Route" when inside the building nothing happens
 var getRoute = function() {
-    var startPoint = [43.263439997535691,-79.918974115517202, 0];
-    var endPoint = [43.26337353676017,-79.918973001283504, 0];
+    var startPoint = [-79.918973001283504, 43.26337353676017, 0]; //red circle
+    var endPoint = [-79.918976558239819, 43.263679209085133, 0]; //green cirlce
 
     map.routes.getRoute([startPoint, endPoint], _onRoutesLoaded);
 };
@@ -76,51 +100,32 @@ setInterval(function() {
 }, 100000);
 // end of changing time
 
+//SearchBar Nav
+searchbar.on("searchresultselect", selectSearchResult);
 
-// // Indicate our current location with a circle
-//var TempIndoorMapId = indoorMapId;
-// var myLocation = L.latLng([37.786542, -122.386022]);
-
-// var circle = L.circle(
-//     myLocation,
-//     {
-//         color: 'red',
-//         fillColor: '#f03',
-//         fillOpacity: 0.5,
-//         radius: 50.0
-//         //radius: 2.0,
-//         //color: "#0000ff",
-//         //indoorMapId: indoorMapId,
-//         //indoorMapFloorId: 0
-//     }
-// ).addTo(map);
-
-// //SearchBar Nav
-// searchbar.on("searchresultselect", selectSearchResult);
-
-// function selectSearchResult(event) {
-//     var location = event.result.location;
+function selectSearchResult(event) {
+    var location = event.result.location;
    
-//     var resultCoord = location.latLng;
-//     var resultFloorId = location.floorIndex;
+    var resultCoord = location.latLng;
+    var resultFloorId = location.floorIndex;
    
-//     var coordWithFloor = [resultCoord.lng, resultCoord.lat, resultFloorId];
-//     var myCoordWithFloor = [myLocation.lng, myLocation.lat, 1];
+    var coordWithFloor = [resultCoord.lng, resultCoord.lat, resultFloorId];
+    var myCoordWithFloor = [myLocation.lng, myLocation.lat, 1];
    
-//     map.routes.getRoute([myCoordWithFloor, coordWithFloor], displayRoute);
-//    }
+    map.routes.getRoute([myCoordWithFloor, coordWithFloor], displayRoute);
+   }
 
-// // Add a layer group to contain our route polylines
-// var routeLines = L.layerGroup();
-// routeLines.addTo(map);
+// Add a layer group to contain our route polylines
+var routeLines = L.layerGroup();
+routeLines.addTo(map);
 
-// // Draw polylines representing a route
-// function displayRoute(routes) {
-//  routeLines.clearLayers();
+// Draw polylines representing a route
+function displayRoute(routes) {
+ routeLines.clearLayers();
 
-//  for (var i = 0; i < routes[0].length; ++i) {
-//    var step = routes[0][i];
-//    var polyline = L.polyline(step.points, { indoorMapId: step.indoorMapId, indoorMapFloorId: step.indoorMapFloorId });
-//    polyline.addTo(routeLines);
-//  }
-// }
+ for (var i = 0; i < routes[0].length; ++i) {
+   var step = routes[0][i];
+   var polyline = L.polyline(step.points, { indoorMapId: step.indoorMapId, indoorMapFloorId: step.indoorMapFloorId });
+   polyline.addTo(routeLines);
+ }
+}

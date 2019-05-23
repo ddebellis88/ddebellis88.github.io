@@ -1,17 +1,3 @@
-var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
-    center: [43.2635390000872, -79.9190792001395],
-    zoom: 16,
-    indoorsEnabled: true,
-    coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-0b256cbd-830e-477e-b2c6-09c7064bcbe5_2019_05_15_02_27_26/webgl_manifest.bin.gz"
-  });
-
-// start of searchBarControl 
-// var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
-//     center: [43.263533,-79.918973],
-//     zoom: 15,
-//     indoorsEnabled: true //enables indoorControl
-// });
-
 var locations = [
     {title: "Drexel University", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541716, -75.186816), zoom: 15, headingDegrees: 100}},
     {title: "Drexel University (Main Building)", subtitle:"Philadelphia, PA", location: {latLng: L.latLng(39.9541718, -75.186816), zoom: 18, headingDegrees: 100}},
@@ -58,9 +44,6 @@ var locationSearchService = {
     callback(options);
     }
 };
-//start indoorControl
-var indoorControl = new WrldIndoorControl("widget-container", map);
-//end of indoorControl
 //
 //start of searchBarControl
 var searchbarConfig = {
@@ -145,14 +128,14 @@ marker9.bindPopup(m9.property.title).openPopup();
 //end adding markers and leaflets
 //
 //Start adding a building highlight
-function onInitialStreamingComplete() {
-    var buildingHighlight = L.Wrld.buildings.buildingHighlight(
-        L.Wrld.buildings.buildingHighlightOptions()
-            .highlightBuildingAtLocation([43.2635047, -79.9190461], [43.2595923, -79.9175896])
-            .color([255, 255, 0, 128])
-        )
-        .addTo(map);
-}
+// function onInitialStreamingComplete() {
+//     var buildingHighlight = L.Wrld.buildings.buildingHighlight(
+//         L.Wrld.buildings.buildingHighlightOptions()
+//             .highlightBuildingAtLocation([43.2635047, -79.9190461], [43.2595923, -79.9175896])
+//             .color([255, 255, 0, 128])
+//         )
+//         .addTo(map);
+// }
 
 map.on("initialstreamingcomplete", onInitialStreamingComplete);
 //End adding a building highlight
