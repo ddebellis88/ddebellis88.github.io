@@ -23,6 +23,7 @@ var circle = L.circle([43.263679209085133, -79.918976558239819], {
 
 //start of Routing
 var routeLines = [];
+console.log(routeLines)
 
 var _onRoutesLoaded = function(routes) {
     // Each step in the route will be on a single floor.
@@ -35,16 +36,25 @@ var _onRoutesLoaded = function(routes) {
         });
         routeLine.addTo(map);
         routeLines.push(routeLine);
+        
+        console.log(routeLines)
     }
 };
 
 //NOTE: When you click on "Get Route" when inside the building nothing happens
+// var getRoute = function() {
+//     var startPoint = [-79.918973001283504, 43.26337353676017, 0]; //red circle
+//     var endPoint = [-79.918976558239819, 43.263679209085133, 0]; //green cirlce
+
+//     map.routes.getRoute([startPoint, endPoint], _onRoutesLoaded);
+// };
+
 var getRoute = function() {
-    var startPoint = [-79.918973001283504, 43.26337353676017, 0]; //red circle
-    var endPoint = [-79.918976558239819, 43.263679209085133, 0]; //green cirlce
+    var startPoint = [-2.978629, 56.46024, 0];
+    var endPoint = [-2.9783117, 56.4600344, 2]; 
 
     map.routes.getRoute([startPoint, endPoint], _onRoutesLoaded);
-};
+}
 
 
 function toggleIndoorButtonVisibility() {
@@ -99,6 +109,9 @@ setInterval(function() {
     timeIndex = (timeIndex + 1) % times.length;
 }, 100000);
 // end of changing time
+
+
+
 
 //SearchBar Nav
 searchbar.on("searchresultselect", selectSearchResult);
