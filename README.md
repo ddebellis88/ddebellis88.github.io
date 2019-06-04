@@ -7,7 +7,7 @@ Now in Beta Stage!
 ## Project mission
 To create a navigable indoor map that makes it easier for students and staff to find their way around the inside of campus buildings, providing the best routes for the most efficient time.
 
-## Trello
+## Trello - Scrum Board
 To check out whats next take a look at our Trello
 https://trello.com/b/IVAkwfqq/college-maps-ci103
 
