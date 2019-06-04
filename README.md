@@ -20,6 +20,7 @@ None hosted by GitHub.io (https://ddebellis88.github.io/)
 
 ## Authors
 * David DeBellis
+  dcd76, Graduates 2022
 * Rachel Jensen
 * Arya Nguyen
 * Max Simmons
