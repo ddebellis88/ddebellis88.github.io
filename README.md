@@ -19,12 +19,11 @@ None hosted by GitHub.io (https://ddebellis88.github.io/)
 * [QGIS] (https://qgis.org/en/site/) - Geographic Information System (GIS)
 
 ## Authors
-* David DeBellis
-  dcd76, Graduates 2022
-* Rachel Jensen
-* Arya Nguyen
-* Max Simmons
-* Adam Burich
+* David DeBellis - dcd76, Graduates: 2022
+* Rachel Jensen - rj523, Graduates: 2023
+* Arya Nguyen - nn389, Graduates: 2023
+* Max Simmons - mjs647, Graduates: 2023
+* Adam Burich - acb426, Graduates: 2022
 
 ## Acknowledgments
 WRLD3D for the useful resorces in the app making
