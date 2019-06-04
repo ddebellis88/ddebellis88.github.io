@@ -161,6 +161,7 @@ ul li:hover a {
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
+	font-size: 20px;
 }
 /* Map Section */
 .map {
@@ -222,7 +223,7 @@ ul li:hover a {
 .banner {
 	background-color: #2D9AB7;
 	background-image: url(../images/parallax.png);
-	height: 400px;
+	height: 200px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -237,21 +238,23 @@ ul li:hover a {
 }
 .parallax_description {
 	color: #FFFFFF;
-	text-align: right;
-	padding-right: 100px;
-	width: 30%;
 	float: right;
 	font-weight: lighter;
 	line-height: 23px;
 	margin-top: 0px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom:0px;
 	margin-left: 0px;
+	font-size: 20px;
 }
 /* More info */
 footer {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: inline-block;
 	background-color: #FFFFFF;
-	padding-bottom: 35px;
+	margin-top: 0px;
 }
 .footer_column {
 	width: 50%;
@@ -390,7 +393,7 @@ nav ul li {
 	width: 100%;
 	font-size: 18px;
 }
-.parallax_description {
+/* .parallax_description {
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
@@ -401,7 +404,7 @@ nav ul li {
 	margin-bottom: 0px;
 	margin-left: 12px;
 	float: none;
-	text-align: center;
+	text-align: center; */
 }
 .banner {
 	background-color: #2D9AB7;
@@ -483,7 +486,7 @@ nav ul li {
 	width: 100%;
 	font-size: 18px;
 }
-.parallax_description {
+/* .parallax_description {
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
@@ -494,7 +497,7 @@ nav ul li {
 	margin-left: 0px;
 	float: none;
 	width: 100%;
-	text-align: center;
+	text-align: center; */
 }
 .thumbnail {
 	width: 50%;
@@ -508,14 +511,6 @@ nav ul li {
 	padding-bottom: 0px;
 	padding-left: 0px;
 	padding-top: 20%;
-}
-.parallax_description {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	padding-top: 30px;
 }
 .banner {
 	padding-left: 20px;
@@ -544,9 +539,5 @@ nav ul li {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-}
-.banner {
-	margin-top: 0px;
-	padding-top: 0px;
 }
 }
