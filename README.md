@@ -23,7 +23,7 @@ None hosted by GitHub.io (https://ddebellis88.github.io/)
 * Rachel Jensen - rj523, Graduates: 2023
 * Arya Nguyen - nn389, Graduates: 2023
 * Max Simmons - mjs647, Graduates: 2023
-* Adam Burich - acb426, Graduates: 2022
+* Adam Burich - acb426, Graduates: 2021
 
 ## Acknowledgments
 WRLD3D for the useful resorces in the app making
