@@ -12,7 +12,14 @@ To check out whats next take a look at our Trello
 https://trello.com/b/IVAkwfqq/college-maps-ci103
 
 ## Requirements 
-None hosted by GitHub.io (https://ddebellis88.github.io/)
+No Requirement to vist the site (https://ddebellis88.github.io/)
+
+Developer Requirements:
+Mac OS X (10.11 or newer) or Windows (7 or newer)
+Computer Requirements:
+Minimum of 2 GB of RAM (Recommended 4 GB)
+Processor with a minimum of 2.1 GHz (Recommended 2.5 or greater)
+Minimum of 2 GB Storage
 
 # Built With
 * [WRLD3D] (https://www.wrld3d.com/) - API Reference
