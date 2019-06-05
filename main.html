@@ -40,20 +40,21 @@
 	<a href="systemsmanual.html" style="float:right;">SYSTEMS MANUAL</a>
     <a href="usermanual.html" style="float:right;">USER MANUAL</a>
 	</div>
-  <!-- Hero Section -->
 
   <!-- Map Section -->
   <section class="map" style="position: relative;height:850px" id="map">
 
     <div id="widget-container" class="wrld-widget-container"></div>
 
-    <!---->
+    <!-- Append Routing button when inside-->
     <div id="floorButtons" style="visibility: hidden; position: absolute; right: 0; z-index: 20">
         <button type="button" onclick="getRoute()">Get Route</button>
     </div>
-    <!---->
 
+
+    <!--Drawls Map-->
     <div id="map"></div>
+    <!--API and Position Set Parameters to drawl maps-->
     <script>
     var map = L.Wrld.map("map", "3e4dcf1c1bdcaaeb147e2ce2b7ae864f", {
       center: [43.2635390000872, -79.9190792001395],
@@ -62,22 +63,12 @@
       coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-0b256cbd-830e-477e-b2c6-09c7064bcbe5_2019_05_15_02_27_26/webgl_manifest.bin.gz"
     });
     </script>
+
+    <!--Import files for given features-->
     <script src="search_bar.js"></script>
     <script src="routing.js"></script>
 
   </section>
-
-  <!-- About Section -->
-
-  <!-- Stats Gallery Section -->
-  
-  <!-- Parallax Section -->
-
-  <!-- More Info Section -->
-
-  <!-- Footer Section -->
-  
-  <!-- Copyrights Section -->
 </div>
 <!-- Main Container Ends -->
 </body>
