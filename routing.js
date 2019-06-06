@@ -92,27 +92,6 @@ map.indoors.on("expand", onIndoorMapExpanded);
 map.indoors.on("collapse", onIndoorMapCollapsed);
 //end of Routing
 //
-// start of changing weather
-var weathers = [L.Wrld.themes.weather.Clear, L.Wrld.themes.weather.Overcast, L.Wrld.themes.weather.Rainy, L.Wrld.themes.weather.Snowy];
-var weatherIndex = 2;
-setInterval(function() {
-    map.themes.setWeather(weathers[weatherIndex]);
-    weatherIndex = (weatherIndex + 1) % weathers.length;
-}, 50000);
-// end of changing weather
-//
-// start of changing time
-var times = [L.Wrld.themes.time.Dawn, L.Wrld.themes.time.Day, L.Wrld.themes.time.Dusk, L.Wrld.themes.time.Night];
-var timeIndex = 0;
-setInterval(function() {
-    map.themes.setTime(times[timeIndex]);
-    timeIndex = (timeIndex + 1) % times.length;
-}, 100000);
-// end of changing time
-
-
-
-
 //SearchBar Nav
 searchbar.on("searchresultselect", selectSearchResult);
 
