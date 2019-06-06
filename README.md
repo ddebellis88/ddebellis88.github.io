@@ -13,7 +13,7 @@ https://trello.com/b/IVAkwfqq/college-maps-ci103
 No Requirement to visit the site (https://ddebellis88.github.io/)
 
 Developer Requirements:<br/>
-Mac OS X (10.11 or newer) or Windows (7 or newer)<br/><br/>
+Mac OS X (10.11 or newer) or Windows (7 or newer)<br/>
 Minimum of 2 GB of RAM (Recommended 4 GB)<br/>
 Processor with a minimum of 2.1 GHz (Recommended 2.5 or greater)<br/>
 Minimum of 2 GB Storage<br/>
