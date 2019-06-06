@@ -10,7 +10,7 @@ To check out whats next take a look at our Trello
 https://trello.com/b/IVAkwfqq/college-maps-ci103
 
 ## Requirements 
-No Requirement to vist the site (https://ddebellis88.github.io/)
+No Requirement to visit the site (https://ddebellis88.github.io/)
 
 Developer Requirements:<br/>
 Mac OS X (10.11 or newer) or Windows (7 or newer)<br/><br/>
@@ -31,7 +31,7 @@ Minimum of 2 GB Storage<br/>
 * Adam Burich - acb426, Graduates: 2021
 
 ## Acknowledgments
-WRLD3D for the useful resorces in the app making
+WRLD3D for the useful resources in the app making
 
 ## License
 
