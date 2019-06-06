@@ -1,7 +1,6 @@
 # College Maps
 
 <img src="/logo.png">
-![CollegeMaps] (master/logo.png)
 
 ## Project mission
 To create a navigable indoor map that makes it easier for students and staff to find their way around the inside of campus buildings, providing the best routes for the most efficient time.
