@@ -1,6 +1,6 @@
 # College Maps
 
-<img src="/master/logo.png">
+<img src="/logo.png">
 ![CollegeMaps] (master/logo.png)
 
 ## Project mission
